@@ -4,10 +4,8 @@
 @tailwind utilities;
 :root {
   font-family: 'Poppins', sans-serif;
-  --white: #ffffff;
-  --black: #111115;
-  --gray: #d6d6d6;
-  --blue: #0350b1;
+  --primary: #298276;
+  --background: #f5f5f5;
 }
 
 html {
@@ -15,7 +13,6 @@ html {
 }
 body {
   overflow-x: hidden;
-  background: var(--white);
   width: 100%;
   box-sizing: border-box;
 }
@@ -32,7 +29,7 @@ h6 {
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-  width: 1.5vmin;
+  width: 2vmin;
 }
 
 ::-webkit-scrollbar-track {
@@ -40,11 +37,13 @@ h6 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--blue);
+  background: var(--primary);
+  border: 4px solid var(--background);
+  border-radius: 25px;
 }
-@supports (scrollbar-color: var(--blue) var(--white)) {
+@supports (scrollbar-color: var(--primary) var(--background)) {
   * {
-    scrollbar-color: var(--blue) var(--white);
+    scrollbar-color: var(--primary) var(--background);
     scrollbar-width: thin;
   }
 }
@@ -52,11 +51,11 @@ h6 {
 /* Selection */
 
 ::-moz-selection {
-  color: var(--white);
-  background: var(--blue);
+  color: var(--background);
+  background: var(--primary);
 }
 
 ::selection {
-  color: var(--white);
-  background: var(--blue);
+  color: var(--background);
+  background: var(--primary);
 }

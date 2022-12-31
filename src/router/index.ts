@@ -13,6 +13,11 @@ const router = createRouter({
       name: 'about',
       component: () => import('@/views/AboutView.vue'),
     },
+    {
+      path: '/legal/epp',
+      name: 'eppprivacypolicy',
+      component: () => import('@/views/legal/EppPrivacyPolicy.vue'),
+    },
   ],
 });
 

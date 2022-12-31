@@ -7,7 +7,9 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    HelloFriend: typeof import('./src/components/HelloFriend.vue')['default']
+    PhEnvelopeSimple: typeof import('./src/components/icons/PhEnvelopeSimple.vue')['default']
+    PhMapPin: typeof import('./src/components/icons/PhMapPin.vue')['default']
+    PhPhone: typeof import('./src/components/icons/PhPhone.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
